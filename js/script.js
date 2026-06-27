@@ -1,11 +1,37 @@
 // ── NAV ──
 function go(id, btn) {
-  document.querySelectorAll('.sec').forEach(s => s.classList.remove('on'));
   document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('on'));
-  document.getElementById(id).classList.add('on');
   btn.classList.add('on');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  var sec = document.getElementById(id);
+  if (!sec) return;
+  var navH = (document.querySelector('.nav-outer') || {offsetHeight:56}).offsetHeight;
+  var top = sec.getBoundingClientRect().top + window.pageYOffset - navH - 6;
+  window.scrollTo({ top: top, behavior: 'smooth' });
 }
+
+// ── SCROLL SPY ──
+(function() {
+  function initSpy() {
+    var sections = document.querySelectorAll('.sec');
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var id = entry.target.id;
+          document.querySelectorAll('.nav-btn').forEach(function(b) {
+            var m = /go\('(\w+)'/.exec(b.getAttribute('onclick') || '');
+            b.classList.toggle('on', !!(m && m[1] === id));
+          });
+        }
+      });
+    }, { rootMargin: '-30% 0px -60% 0px', threshold: 0 });
+    sections.forEach(function(s) { observer.observe(s); });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSpy);
+  } else {
+    initSpy();
+  }
+})();
 
 // ── LANGUAGE ──
 function setLang(lang) {
