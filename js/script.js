@@ -225,12 +225,12 @@ function sendOrder() {
   var typeVal = document.getElementById('typeInput').value.trim();
   var notes = document.getElementById('cartNotes').value.trim();
   var total = keys.reduce(function(s,k){return s+cart[k].qty*cart[k].price;},0);
-  var typeLabels = {dine: ar?'🍽️ داخل المطعم':'🍽️ Dine In', pickup: ar?'🛍️ استلام':'🛍️ Pickup', delivery: ar?'🚗 توصيل':'🚗 Delivery'};
+  var typeLabels = {dine: ar?'داخل المطعم':'Dine In', pickup: ar?'استلام':'Pickup', delivery: ar?'توصيل':'Delivery'};
   var inputLabels = {dine: ar?'الطاولة':'Table', pickup: ar?'الاسم':'Name', delivery: ar?'العنوان':'Address'};
 
   var msg = ar
-    ? '🥗 *طلب جديد — FitBites*\n🔢 *رقم الطلب: #' + num + '*\n' + typeLabels[orderType]
-    : '🥗 *New Order — FitBites*\n🔢 *Order #' + num + '*\n' + typeLabels[orderType];
+    ? '*طلب جديد — FitBites*\n*رقم الطلب: #' + num + '*\n' + typeLabels[orderType]
+    : '*New Order — FitBites*\n*Order #' + num + '*\n' + typeLabels[orderType];
 
   if (typeVal) msg += '\n' + inputLabels[orderType] + ': ' + typeVal;
   msg += '\n\n';
@@ -238,8 +238,8 @@ function sendOrder() {
     var it = cart[id];
     msg += '• ' + it.name + ' x' + it.qty + ' — ' + (it.price*it.qty) + ' AED\n';
   });
-  msg += ar ? '\n💰 *الإجمالي: ' + total + ' AED*' : '\n💰 *Total: ' + total + ' AED*';
-  if (notes) msg += (ar?'\n📝 *ملاحظات:* ':'\n📝 *Notes:* ') + notes;
+  msg += ar ? '\n*الإجمالي: ' + total + ' AED*' : '\n*Total: ' + total + ' AED*';
+  if (notes) msg += (ar?'\n*ملاحظات:* ':'\n*Notes:* ') + notes;
 
   window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent(msg), '_blank');
 
