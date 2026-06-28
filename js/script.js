@@ -227,8 +227,8 @@ function sendOrder() {
   var inputLabels = {dine: ar?'الطاولة':'Table', pickup: ar?'الاسم':'Name', delivery: ar?'العنوان':'Address'};
 
   var msg = ar
-    ? '*طلب جديد — FitBites*\n*رقم الطلب: #' + num + '*\n' + typeLabels[orderType]
-    : '*New Order — FitBites*\n*Order #' + num + '*\n' + typeLabels[orderType];
+    ? '*طلب جديد — Burger Zone*\n*رقم الطلب: #' + num + '*\n' + typeLabels[orderType]
+    : '*New Order — Burger Zone*\n*Order #' + num + '*\n' + typeLabels[orderType];
 
   if (typeVal) msg += '\n' + inputLabels[orderType] + ': ' + typeVal;
   msg += '\n\n';
