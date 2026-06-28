@@ -3,22 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<title>FitBites — Healthy Menu</title>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;600;700;800&display=swap" rel="stylesheet">
+<title>Burger Zone — Fresh Burger Menu</title>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <div class="lang-bar">
-  <button class="lang-btn" onclick="openAdminLogin()" style="margin-right:auto;background:var(--green);color:#fff;border-color:var(--green);font-size:11px;">⚙ Admin</button>
-  <button class="lang-btn on" id="btn-en" onclick="setLang('en')">EN</button>
+<button class="lang-btn on" id="btn-en" onclick="setLang('en')">EN</button>
   <button class="lang-btn" id="btn-ar" onclick="setLang('ar')">عربي</button>
 </div>
 
 <div class="hero">
-  <div class="hero-icon"><img src="images/logo.jpg" alt="FitBites Logo" style="width:100%;height:100%;object-fit:contain;border-radius:16px;"></div>
-  <div class="hero-name">Fit<span>Bites</span></div>
-  <div class="hero-tag" data-en="Clean Food · Real Results" data-ar="طعام صحي · نتائج حقيقية">Clean Food · Real Results</div>
+  <div class="hero-icon"><img src="images/logo.png" alt="Burger Zone Logo"></div>
+  <div class="hero-name">Burger<span>Zone</span></div>
+  <div class="hero-tag" data-en="Fresh Burgers · Bold Flavors" data-ar="برغر طازج · نكهات جريئة">Fresh Burgers · Bold Flavors</div>
   <div class="hero-pills">
     <div class="hpill" data-en="📍 Dubai, UAE" data-ar="📍 دبي، الإمارات">📍 Dubai, UAE</div>
     <div class="hpill wa" data-en="💬 WhatsApp Order" data-ar="💬 اطلب واتساب">💬 WhatsApp Order</div>
@@ -27,139 +26,139 @@
 </div>
 
 <div class="stats">
-  <div class="stat"><div class="stat-num">100%</div><div class="stat-lbl" data-en="Fresh Daily" data-ar="طازج يومياً">Fresh Daily</div></div>
-  <div class="stat"><div class="stat-num">0g</div><div class="stat-lbl" data-en="Trans Fat" data-ar="دهون متحولة">Trans Fat</div></div>
+  <div class="stat"><div class="stat-num">100%</div><div class="stat-lbl" data-en="Fresh Beef" data-ar="لحم طازج">Fresh Beef</div></div>
+  <div class="stat"><div class="stat-num">0g</div><div class="stat-lbl" data-en="Fillers" data-ar="مواد حشو">Fillers</div></div>
   <div class="stat"><div class="stat-num">26+</div><div class="stat-lbl" data-en="Menu Items" data-ar="عناصر المنيو">Menu Items</div></div>
 </div>
 
-<div class="combo" data-en="🌿 All calories shown per serving · No hidden sugars · No artificial flavours" data-ar="🌿 السعرات الحرارية لكل وجبة · بدون سكريات مخفية">🌿 All calories shown per serving · No hidden sugars · No artificial flavours</div>
+<div class="combo" data-en="🔥 All burgers handcrafted daily · 100% pure beef patties · No frozen shortcuts" data-ar="🔥 برغر يدوي طازج يومياً · لحم بقري 100% · بدون تجميد">🔥 All burgers handcrafted daily · 100% pure beef patties · No frozen shortcuts</div>
 
-<div class="nav-outer"><nav class="nav"><button class="nav-btn  on" onclick="go('bowls',this)" data-en="🥗 Bowls" data-ar="🥗 أطباق صحية">🥗 Bowls</button><button class="nav-btn" onclick="go('protein',this)" data-en="🍗 Protein" data-ar="🍗 بروتين">🍗 Protein</button><button class="nav-btn" onclick="go('wraps',this)" data-en="🌯 Wraps" data-ar="🌯 رابز">🌯 Wraps</button><button class="nav-btn" onclick="go('snacks',this)" data-en="🥜 Snacks" data-ar="🥜 سناكس">🥜 Snacks</button><button class="nav-btn" onclick="go('drinks',this)" data-en="🥤 Drinks" data-ar="🥤 مشروبات">🥤 Drinks</button></nav></div>
+<div class="nav-outer"><nav class="nav"><button class="nav-btn  on" onclick="go('bowls',this)" data-en="🍔 Burgers" data-ar="🍔 برغر">🍔 Burgers</button><button class="nav-btn" onclick="go('protein',this)" data-en="🍟 Combos" data-ar="🍟 كومبو">🍟 Combos</button><button class="nav-btn" onclick="go('wraps',this)" data-en="🌯 Wraps" data-ar="🌯 رابز">🌯 Wraps</button><button class="nav-btn" onclick="go('snacks',this)" data-en="🍟 Sides" data-ar="🍟 سايدز">🍟 Sides</button><button class="nav-btn" onclick="go('drinks',this)" data-en="🥤 Drinks" data-ar="🥤 مشروبات">🥤 Drinks</button></nav></div>
 
 
 <section class="sec" id="bowls">
   <div class="sec-head">
-    <div class="sec-sub">🥗 BOWLS · أطباق صحية</div>
-    <div class="sec-title" data-en="Power Bowls" data-ar="أطباق صحية">Power Bowls</div>
-    <div class="sec-desc">Fresh ingredients · Balanced macros</div>
+    <div class="sec-sub">🍔 BURGERS · برغر</div>
+    <div class="sec-title" data-en="Signature Burgers" data-ar="برغر مميز">Signature Burgers</div>
+    <div class="sec-desc">100% beef · Handcrafted daily</div>
   </div>
   <div class="grid">
-    <div class="card" data-name="Grilled Chicken Bowl" data-price="42">
+    <div class="card" data-name="Classic Smash Burger" data-price="42">
       <div class="cimg">
-        <img src="images/item-1.webp" alt="Grilled Chicken Bowl" loading="lazy">
+        <img src="images/item-1.jpg" alt="Classic Smash Burger" loading="lazy">
         <span class="cbadge pop">⭐ POPULAR</span>
         <div class="macros">
-          <div class="macro"><div class="macro-val">420</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">680</div><div class="macro-lbl">KCAL</div></div>
           <div class="macro"><div class="macro-val">38g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">12g</div><div class="macro-lbl">CARBS</div></div>
+          <div class="macro"><div class="macro-val">28g</div><div class="macro-lbl">FAT</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Grilled Chicken Bowl" data-ar="طبق دجاج مشوي">Grilled Chicken Bowl</div>
-        <div class="cdesc">Grilled chicken, quinoa, roasted veggies, tahini</div>
+        <div class="cname" data-en="Classic Smash Burger" data-ar="برغر سماش كلاسيك">Classic Smash Burger</div>
+        <div class="cdesc">100% beef patty, cheddar, lettuce, tomato, special sauce</div>
         <div class="cfoot">
           <div class="cprice">42<small> AED</small></div>
-          <div class="ccal">420 kcal</div>
+          <div class="ccal">680 kcal</div>
           <button class="add-btn" onclick="addItem(this)">ADD</button>
         </div>
       </div>
     </div>
-    <div class="card" data-name="Rainbow Veggie Bowl" data-price="38">
+    <div class="card" data-name="Crispy Chicken Burger" data-price="38">
       <div class="cimg">
-        <img src="images/item-2.webp" alt="Rainbow Veggie Bowl" loading="lazy">
-        <span class="cbadge veg">🌱 VEGAN</span>
-        <div class="macros">
-          <div class="macro"><div class="macro-val">320</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">14g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">45g</div><div class="macro-lbl">CARBS</div></div>
-        </div>
-      </div>
-      <div class="cbody">
-        <div class="cname" data-en="Rainbow Veggie Bowl" data-ar="طبق خضار قوس قزح">Rainbow Veggie Bowl</div>
-        <div class="cdesc">Mixed greens, chickpeas, avocado, lemon dressing</div>
-        <div class="cfoot">
-          <div class="cprice">38<small> AED</small></div>
-          <div class="ccal">320 kcal</div>
-          <button class="add-btn" onclick="addItem(this)">ADD</button>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-name="Salmon Power Bowl" data-price="58">
-      <div class="cimg">
-        <img src="images/item-3.webp" alt="Salmon Power Bowl" loading="lazy">
-        <span class="cbadge cal">LOW CARB</span>
-        <div class="macros">
-          <div class="macro"><div class="macro-val">380</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">42g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">8g</div><div class="macro-lbl">CARBS</div></div>
-        </div>
-      </div>
-      <div class="cbody">
-        <div class="cname" data-en="Salmon Power Bowl" data-ar="طبق سالمون القوة">Salmon Power Bowl</div>
-        <div class="cdesc">Atlantic salmon, spinach, edamame, sesame ginger</div>
-        <div class="cfoot">
-          <div class="cprice">58<small> AED</small></div>
-          <div class="ccal">380 kcal</div>
-          <button class="add-btn" onclick="addItem(this)">ADD</button>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-name="Buddha Bowl" data-price="44">
-      <div class="cimg">
-        <img src="images/item-4.webp" alt="Buddha Bowl" loading="lazy">
+        <img src="images/item-2.jpg" alt="Crispy Chicken Burger" loading="lazy">
         <span class="cbadge new">✨ NEW</span>
         <div class="macros">
-          <div class="macro"><div class="macro-val">460</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">35g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">48g</div><div class="macro-lbl">CARBS</div></div>
+          <div class="macro"><div class="macro-val">590</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">32g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">24g</div><div class="macro-lbl">FAT</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Buddha Bowl" data-ar="طبق بوذا">Buddha Bowl</div>
-        <div class="cdesc">Brown rice, roasted sweet potato, kale, tahini</div>
+        <div class="cname" data-en="Crispy Chicken Burger" data-ar="برغر دجاج مقرمش">Crispy Chicken Burger</div>
+        <div class="cdesc">Crispy fried chicken, coleslaw, pickles, house mayo</div>
+        <div class="cfoot">
+          <div class="cprice">38<small> AED</small></div>
+          <div class="ccal">590 kcal</div>
+          <button class="add-btn" onclick="addItem(this)">ADD</button>
+        </div>
+      </div>
+    </div>
+    <div class="card" data-name="Double Smash Burger" data-price="58">
+      <div class="cimg">
+        <img src="images/item-3.jpg" alt="Double Smash Burger" loading="lazy">
+        <span class="cbadge cal">🌶 SPICY</span>
+        <div class="macros">
+          <div class="macro"><div class="macro-val">850</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">52g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">42g</div><div class="macro-lbl">FAT</div></div>
+        </div>
+      </div>
+      <div class="cbody">
+        <div class="cname" data-en="Double Smash Burger" data-ar="برغر سماش مزدوج">Double Smash Burger</div>
+        <div class="cdesc">Double beef patty, American cheese, caramelized onion, jalapeños</div>
+        <div class="cfoot">
+          <div class="cprice">58<small> AED</small></div>
+          <div class="ccal">850 kcal</div>
+          <button class="add-btn" onclick="addItem(this)">ADD</button>
+        </div>
+      </div>
+    </div>
+    <div class="card" data-name="BBQ Bacon Burger" data-price="44">
+      <div class="cimg">
+        <img src="images/item-4.jpg" alt="BBQ Bacon Burger" loading="lazy">
+        <span class="cbadge new">✨ NEW</span>
+        <div class="macros">
+          <div class="macro"><div class="macro-val">780</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">44g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">38g</div><div class="macro-lbl">FAT</div></div>
+        </div>
+      </div>
+      <div class="cbody">
+        <div class="cname" data-en="BBQ Bacon Burger" data-ar="برغر باكون بي بي كيو">BBQ Bacon Burger</div>
+        <div class="cdesc">Beef patty, smoked bacon, BBQ sauce, crispy onion rings</div>
         <div class="cfoot">
           <div class="cprice">44<small> AED</small></div>
-          <div class="ccal">460 kcal</div>
+          <div class="ccal">780 kcal</div>
           <button class="add-btn" onclick="addItem(this)">ADD</button>
         </div>
       </div>
     </div>
-    <div class="card" data-name="Tuna Poke Bowl" data-price="52">
+    <div class="card" data-name="Mushroom Swiss Burger" data-price="52">
       <div class="cimg">
-        <img src="images/item-5.webp" alt="Tuna Poke Bowl" loading="lazy">
-        
+        <img src="images/item-5.jpg" alt="Mushroom Swiss Burger" loading="lazy">
+
         <div class="macros">
-          <div class="macro"><div class="macro-val">350</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">28g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">30g</div><div class="macro-lbl">CARBS</div></div>
+          <div class="macro"><div class="macro-val">720</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">40g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">34g</div><div class="macro-lbl">FAT</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Tuna Poke Bowl" data-ar="طبق تونة بوكي">Tuna Poke Bowl</div>
-        <div class="cdesc">Raw tuna, sushi rice, cucumber, ponzu sauce</div>
+        <div class="cname" data-en="Mushroom Swiss Burger" data-ar="برغر فطر سويسري">Mushroom Swiss Burger</div>
+        <div class="cdesc">Beef patty, sautéed mushrooms, Swiss cheese, truffle mayo</div>
         <div class="cfoot">
           <div class="cprice">52<small> AED</small></div>
-          <div class="ccal">350 kcal</div>
+          <div class="ccal">720 kcal</div>
           <button class="add-btn" onclick="addItem(this)">ADD</button>
         </div>
       </div>
     </div>
-    <div class="card" data-name="Beef & Greens Bowl" data-price="48">
+    <div class="card" data-name="The Big Stack" data-price="68">
       <div class="cimg">
-        <img src="images/item-6.webp" alt="Beef & Greens Bowl" loading="lazy">
-        <span class="cbadge cal">HIGH PROTEIN</span>
+        <img src="images/item-6.jpg" alt="The Big Stack" loading="lazy">
+        <span class="cbadge cal">🔥 SIGNATURE</span>
         <div class="macros">
-          <div class="macro"><div class="macro-val">480</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">52g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">22g</div><div class="macro-lbl">CARBS</div></div>
+          <div class="macro"><div class="macro-val">1080</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">68g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">52g</div><div class="macro-lbl">FAT</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Beef & Greens Bowl" data-ar="طبق لحم وخضار">Beef & Greens Bowl</div>
-        <div class="cdesc">Lean beef, broccoli, brown rice, teriyaki glaze</div>
+        <div class="cname" data-en="The Big Stack" data-ar="ذا بيج ستاك">The Big Stack</div>
+        <div class="cdesc">Triple beef patty, triple American cheese, signature sauce</div>
         <div class="cfoot">
-          <div class="cprice">48<small> AED</small></div>
-          <div class="ccal">480 kcal</div>
+          <div class="cprice">68<small> AED</small></div>
+          <div class="ccal">1080 kcal</div>
           <button class="add-btn" onclick="addItem(this)">ADD</button>
         </div>
       </div>
@@ -167,127 +166,127 @@
 </section>
 <section class="sec" id="protein">
   <div class="sec-head">
-    <div class="sec-sub">🍗 PROTEIN · بروتين</div>
-    <div class="sec-title" data-en="Protein Plates" data-ar="أطباق البروتين">Protein Plates</div>
-    <div class="sec-desc">High protein · Low fat · Gym-ready</div>
+    <div class="sec-sub">🍟 COMBOS · كومبو</div>
+    <div class="sec-title" data-en="Combo Meals" data-ar="وجبات كومبو">Combo Meals</div>
+    <div class="sec-desc">Burger + Fries + Drink · Best value</div>
   </div>
   <div class="grid">
-    <div class="card" data-name="Grilled Chicken Breast" data-price="45">
+    <div class="card" data-name="Classic Combo" data-price="45">
       <div class="cimg">
-        <img src="images/item-7.webp" alt="Grilled Chicken Breast" loading="lazy">
-        <span class="cbadge cal">HIGH PROTEIN</span>
+        <img src="images/item-7.jpg" alt="Classic Combo" loading="lazy">
+        <span class="cbadge cal">BEST VALUE</span>
         <div class="macros">
-          <div class="macro"><div class="macro-val">390</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">48g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">5g</div><div class="macro-lbl">FAT</div></div>
+          <div class="macro"><div class="macro-val">980</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">42g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">38g</div><div class="macro-lbl">FAT</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Grilled Chicken Breast" data-ar="صدر دجاج مشوي">Grilled Chicken Breast</div>
-        <div class="cdesc">200g chicken, steamed broccoli, sweet potato mash</div>
+        <div class="cname" data-en="Classic Combo" data-ar="كومبو كلاسيك">Classic Combo</div>
+        <div class="cdesc">Classic Smash Burger + Regular Fries + Cold Drink</div>
         <div class="cfoot">
           <div class="cprice">45<small> AED</small></div>
-          <div class="ccal">390 kcal</div>
+          <div class="ccal">980 kcal</div>
           <button class="add-btn" onclick="addItem(this)">ADD</button>
         </div>
       </div>
     </div>
-    <div class="card" data-name="Grilled Salmon Fillet" data-price="62">
+    <div class="card" data-name="Smash Combo" data-price="62">
       <div class="cimg">
-        <img src="images/item-8.webp" alt="Grilled Salmon Fillet" loading="lazy">
+        <img src="images/item-8.jpg" alt="Smash Combo" loading="lazy">
         <span class="cbadge pop">⭐ POPULAR</span>
         <div class="macros">
-          <div class="macro"><div class="macro-val">420</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">44g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">8g</div><div class="macro-lbl">FAT</div></div>
+          <div class="macro"><div class="macro-val">1180</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">56g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">52g</div><div class="macro-lbl">FAT</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Grilled Salmon Fillet" data-ar="فيليه سالمون مشوي">Grilled Salmon Fillet</div>
-        <div class="cdesc">180g salmon, asparagus, lemon butter, capers</div>
+        <div class="cname" data-en="Smash Combo" data-ar="كومبو سماش">Smash Combo</div>
+        <div class="cdesc">Double Smash Burger + Loaded Fries + Large Drink</div>
         <div class="cfoot">
           <div class="cprice">62<small> AED</small></div>
-          <div class="ccal">420 kcal</div>
+          <div class="ccal">1180 kcal</div>
           <button class="add-btn" onclick="addItem(this)">ADD</button>
         </div>
       </div>
     </div>
-    <div class="card" data-name="Egg White Omelette" data-price="35">
+    <div class="card" data-name="Chicken Tenders Meal" data-price="35">
       <div class="cimg">
-        <img src="images/item-9.webp" alt="Egg White Omelette" loading="lazy">
-        
+        <img src="images/item-9.jpg" alt="Chicken Tenders Meal" loading="lazy">
+
         <div class="macros">
-          <div class="macro"><div class="macro-val">350</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">40g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">6g</div><div class="macro-lbl">FAT</div></div>
+          <div class="macro"><div class="macro-val">740</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">38g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">28g</div><div class="macro-lbl">FAT</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Egg White Omelette" data-ar="أومليت بياض البيض">Egg White Omelette</div>
-        <div class="cdesc">6 egg whites, spinach, mushroom, low-fat cheese</div>
+        <div class="cname" data-en="Chicken Tenders Meal" data-ar="وجبة تندرز دجاج">Chicken Tenders Meal</div>
+        <div class="cdesc">5 crispy chicken tenders + fries + dipping sauce + drink</div>
         <div class="cfoot">
           <div class="cprice">35<small> AED</small></div>
-          <div class="ccal">350 kcal</div>
+          <div class="ccal">740 kcal</div>
           <button class="add-btn" onclick="addItem(this)">ADD</button>
         </div>
       </div>
     </div>
-    <div class="card" data-name="Lean Beef Steak" data-price="72">
+    <div class="card" data-name="BBQ Bacon Combo" data-price="72">
       <div class="cimg">
-        <img src="images/item-10.webp" alt="Lean Beef Steak" loading="lazy">
+        <img src="images/item-10.jpg" alt="BBQ Bacon Combo" loading="lazy">
         <span class="cbadge new">✨ NEW</span>
         <div class="macros">
-          <div class="macro"><div class="macro-val">440</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">50g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">12g</div><div class="macro-lbl">FAT</div></div>
+          <div class="macro"><div class="macro-val">1120</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">52g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">48g</div><div class="macro-lbl">FAT</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Lean Beef Steak" data-ar="ستيك لحم خالي من الدهون">Lean Beef Steak</div>
-        <div class="cdesc">Sirloin steak, grilled zucchini, cauliflower rice</div>
+        <div class="cname" data-en="BBQ Bacon Combo" data-ar="كومبو باكون بي بي كيو">BBQ Bacon Combo</div>
+        <div class="cdesc">BBQ Bacon Burger + Loaded Fries + Large Milkshake</div>
         <div class="cfoot">
           <div class="cprice">72<small> AED</small></div>
-          <div class="ccal">440 kcal</div>
+          <div class="ccal">1120 kcal</div>
           <button class="add-btn" onclick="addItem(this)">ADD</button>
         </div>
       </div>
     </div>
-    <div class="card" data-name="Tofu Stir Fry" data-price="38">
+    <div class="card" data-name="Veggie Combo" data-price="38">
       <div class="cimg">
-        <img src="images/item-11.webp" alt="Tofu Stir Fry" loading="lazy">
-        <span class="cbadge veg">🌱 VEGAN</span>
+        <img src="images/item-11.jpg" alt="Veggie Combo" loading="lazy">
+        <span class="cbadge veg">🌱 VEGGIE</span>
         <div class="macros">
-          <div class="macro"><div class="macro-val">310</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">22g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">680</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">24g</div><div class="macro-lbl">PROTEIN</div></div>
           <div class="macro"><div class="macro-val">18g</div><div class="macro-lbl">FAT</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Tofu Stir Fry" data-ar="توفو مقلي">Tofu Stir Fry</div>
-        <div class="cdesc">Firm tofu, bok choy, bell pepper, ginger soy</div>
+        <div class="cname" data-en="Veggie Combo" data-ar="كومبو نباتي">Veggie Combo</div>
+        <div class="cdesc">Plant-based patty burger + onion rings + fresh juice</div>
         <div class="cfoot">
           <div class="cprice">38<small> AED</small></div>
-          <div class="ccal">310 kcal</div>
+          <div class="ccal">680 kcal</div>
           <button class="add-btn" onclick="addItem(this)">ADD</button>
         </div>
       </div>
     </div>
-    <div class="card" data-name="Shrimp & Greens" data-price="55">
+    <div class="card" data-name="Slider Pack" data-price="55">
       <div class="cimg">
-        <img src="images/item-12.webp" alt="Shrimp & Greens" loading="lazy">
-        
+        <img src="images/item-12.jpg" alt="Slider Pack" loading="lazy">
+
         <div class="macros">
-          <div class="macro"><div class="macro-val">280</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">30g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">4g</div><div class="macro-lbl">FAT</div></div>
+          <div class="macro"><div class="macro-val">860</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">48g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">36g</div><div class="macro-lbl">FAT</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Shrimp & Greens" data-ar="روبيان وخضار">Shrimp & Greens</div>
-        <div class="cdesc">Jumbo shrimp, arugula, cherry tomato, olive oil</div>
+        <div class="cname" data-en="Slider Pack" data-ar="باقة سلايدر">Slider Pack</div>
+        <div class="cdesc">4 mini smash sliders + regular fries + cold drink</div>
         <div class="cfoot">
           <div class="cprice">55<small> AED</small></div>
-          <div class="ccal">280 kcal</div>
+          <div class="ccal">860 kcal</div>
           <button class="add-btn" onclick="addItem(this)">ADD</button>
         </div>
       </div>
@@ -296,86 +295,86 @@
 <section class="sec" id="wraps">
   <div class="sec-head">
     <div class="sec-sub">🌯 WRAPS · رابز</div>
-    <div class="sec-title" data-en="Healthy Wraps" data-ar="رابز صحية">Healthy Wraps</div>
-    <div class="sec-desc">Whole wheat · Packed with protein</div>
+    <div class="sec-title" data-en="Loaded Wraps" data-ar="رابز محملة">Loaded Wraps</div>
+    <div class="sec-desc">Crispy fillings · Toasted tortilla</div>
   </div>
   <div class="grid">
-    <div class="card" data-name="Chicken Caesar Wrap" data-price="36">
+    <div class="card" data-name="Crispy Chicken Wrap" data-price="36">
       <div class="cimg">
-        <img src="images/item-13.webp" alt="Chicken Caesar Wrap" loading="lazy">
+        <img src="images/item-13.jpg" alt="Crispy Chicken Wrap" loading="lazy">
         <span class="cbadge pop">⭐ POPULAR</span>
         <div class="macros">
-          <div class="macro"><div class="macro-val">380</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">35g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">32g</div><div class="macro-lbl">CARBS</div></div>
+          <div class="macro"><div class="macro-val">520</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">38g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">22g</div><div class="macro-lbl">FAT</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Chicken Caesar Wrap" data-ar="راب دجاج سيزر">Chicken Caesar Wrap</div>
-        <div class="cdesc">Grilled chicken, romaine, parmesan, light caesar</div>
+        <div class="cname" data-en="Crispy Chicken Wrap" data-ar="راب دجاج مقرمش">Crispy Chicken Wrap</div>
+        <div class="cdesc">Crispy chicken, lettuce, cheddar, ranch dressing</div>
         <div class="cfoot">
           <div class="cprice">36<small> AED</small></div>
-          <div class="ccal">380 kcal</div>
+          <div class="ccal">520 kcal</div>
           <button class="add-btn" onclick="addItem(this)">ADD</button>
         </div>
       </div>
     </div>
-    <div class="card" data-name="Falafel Hummus Wrap" data-price="30">
+    <div class="card" data-name="BBQ Beef Wrap" data-price="30">
       <div class="cimg">
-        <img src="images/item-14.webp" alt="Falafel Hummus Wrap" loading="lazy">
-        <span class="cbadge veg">🌱 VEGAN</span>
+        <img src="images/item-14.jpg" alt="BBQ Beef Wrap" loading="lazy">
+        <span class="cbadge cal">🌶 SPICY</span>
         <div class="macros">
-          <div class="macro"><div class="macro-val">295</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">12g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">38g</div><div class="macro-lbl">CARBS</div></div>
+          <div class="macro"><div class="macro-val">580</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">42g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">28g</div><div class="macro-lbl">FAT</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Falafel Hummus Wrap" data-ar="راب فلافل وحمص">Falafel Hummus Wrap</div>
-        <div class="cdesc">Baked falafel, hummus, tomato, cucumber, parsley</div>
+        <div class="cname" data-en="BBQ Beef Wrap" data-ar="راب لحم بي بي كيو">BBQ Beef Wrap</div>
+        <div class="cdesc">Seasoned beef, BBQ sauce, jalapeños, American cheese</div>
         <div class="cfoot">
           <div class="cprice">30<small> AED</small></div>
-          <div class="ccal">295 kcal</div>
+          <div class="ccal">580 kcal</div>
           <button class="add-btn" onclick="addItem(this)">ADD</button>
         </div>
       </div>
     </div>
-    <div class="card" data-name="Turkey & Avocado Wrap" data-price="38">
+    <div class="card" data-name="Buffalo Chicken Wrap" data-price="38">
       <div class="cimg">
-        <img src="images/item-15.webp" alt="Turkey & Avocado Wrap" loading="lazy">
-        
+        <img src="images/item-15.jpg" alt="Buffalo Chicken Wrap" loading="lazy">
+
         <div class="macros">
-          <div class="macro"><div class="macro-val">340</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">38g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">22g</div><div class="macro-lbl">CARBS</div></div>
+          <div class="macro"><div class="macro-val">490</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">36g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">20g</div><div class="macro-lbl">FAT</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Turkey & Avocado Wrap" data-ar="راب تركي وأفوكادو">Turkey & Avocado Wrap</div>
-        <div class="cdesc">Lean turkey, avocado, spinach, mustard dressing</div>
+        <div class="cname" data-en="Buffalo Chicken Wrap" data-ar="راب دجاج بافالو">Buffalo Chicken Wrap</div>
+        <div class="cdesc">Buffalo chicken strips, blue cheese, celery, ranch dressing</div>
         <div class="cfoot">
           <div class="cprice">38<small> AED</small></div>
-          <div class="ccal">340 kcal</div>
+          <div class="ccal">490 kcal</div>
           <button class="add-btn" onclick="addItem(this)">ADD</button>
         </div>
       </div>
     </div>
-    <div class="card" data-name="Tuna Low-Carb Wrap" data-price="32">
+    <div class="card" data-name="Double Beef Wrap" data-price="32">
       <div class="cimg">
-        <img src="images/item-16.webp" alt="Tuna Low-Carb Wrap" loading="lazy">
-        <span class="cbadge cal">LOW CARB</span>
+        <img src="images/item-16.jpg" alt="Double Beef Wrap" loading="lazy">
+        <span class="cbadge new">✨ NEW</span>
         <div class="macros">
-          <div class="macro"><div class="macro-val">290</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">40g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">10g</div><div class="macro-lbl">CARBS</div></div>
+          <div class="macro"><div class="macro-val">620</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">48g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">32g</div><div class="macro-lbl">FAT</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Tuna Low-Carb Wrap" data-ar="راب تونة منخفض الكارب">Tuna Low-Carb Wrap</div>
-        <div class="cdesc">Tuna, lettuce wrap, cucumber, light mayo</div>
+        <div class="cname" data-en="Double Beef Wrap" data-ar="راب لحم مزدوج">Double Beef Wrap</div>
+        <div class="cdesc">Double seasoned beef, American cheese, caramelized onion, mustard</div>
         <div class="cfoot">
           <div class="cprice">32<small> AED</small></div>
-          <div class="ccal">290 kcal</div>
+          <div class="ccal">620 kcal</div>
           <button class="add-btn" onclick="addItem(this)">ADD</button>
         </div>
       </div>
@@ -383,87 +382,87 @@
 </section>
 <section class="sec" id="snacks">
   <div class="sec-head">
-    <div class="sec-sub">🥜 SNACKS · سناكس</div>
-    <div class="sec-title" data-en="Healthy Snacks" data-ar="سناكس صحية">Healthy Snacks</div>
-    <div class="sec-desc">No processed sugar · Real ingredients</div>
+    <div class="sec-sub">🍟 SIDES · سايدز</div>
+    <div class="sec-title" data-en="Crispy Sides" data-ar="سايدز مقرمشة">Crispy Sides</div>
+    <div class="sec-desc">Perfect with any burger</div>
   </div>
   <div class="grid">
-    <div class="card" data-name="Protein Energy Balls" data-price="22">
+    <div class="card" data-name="Loaded Fries" data-price="22">
       <div class="cimg">
-        <img src="images/item-17.webp" alt="Protein Energy Balls" loading="lazy">
+        <img src="images/item-17.jpg" alt="Loaded Fries" loading="lazy">
         <span class="cbadge pop">⭐ POPULAR</span>
         <div class="macros">
-          <div class="macro"><div class="macro-val">180</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">18g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">12g</div><div class="macro-lbl">CARBS</div></div>
+          <div class="macro"><div class="macro-val">420</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">12g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">22g</div><div class="macro-lbl">FAT</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Protein Energy Balls" data-ar="كرات طاقة البروتين">Protein Energy Balls</div>
-        <div class="cdesc">Oats, peanut butter, honey, protein powder (3 pcs)</div>
+        <div class="cname" data-en="Loaded Fries" data-ar="فراي محمل">Loaded Fries</div>
+        <div class="cdesc">Crispy fries, cheddar sauce, jalapeños, sour cream</div>
         <div class="cfoot">
           <div class="cprice">22<small> AED</small></div>
-          <div class="ccal">180 kcal</div>
+          <div class="ccal">420 kcal</div>
           <button class="add-btn" onclick="addItem(this)">ADD</button>
         </div>
       </div>
     </div>
-    <div class="card" data-name="Acai Berry Bowl" data-price="28">
+    <div class="card" data-name="Onion Rings" data-price="28">
       <div class="cimg">
-        <img src="images/item-18.webp" alt="Acai Berry Bowl" loading="lazy">
-        <span class="cbadge veg">🌱 VEGAN</span>
+        <img src="images/item-18.jpg" alt="Onion Rings" loading="lazy">
+
         <div class="macros">
-          <div class="macro"><div class="macro-val">150</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">5g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">20g</div><div class="macro-lbl">CARBS</div></div>
+          <div class="macro"><div class="macro-val">380</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">6g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">18g</div><div class="macro-lbl">FAT</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Acai Berry Bowl" data-ar="طبق توت أساي">Acai Berry Bowl</div>
-        <div class="cdesc">Acai, banana, granola, fresh berries, chia seeds</div>
+        <div class="cname" data-en="Onion Rings" data-ar="حلقات البصل">Onion Rings</div>
+        <div class="cdesc">Beer-battered golden onion rings, chipotle dipping sauce</div>
         <div class="cfoot">
           <div class="cprice">28<small> AED</small></div>
-          <div class="ccal">150 kcal</div>
+          <div class="ccal">380 kcal</div>
           <button class="add-btn" onclick="addItem(this)">ADD</button>
         </div>
       </div>
     </div>
-    <div class="card" data-name="Greek Yogurt Parfait" data-price="24">
+    <div class="card" data-name="Chicken Tenders" data-price="24">
       <div class="cimg">
-        <img src="images/item-19.webp" alt="Greek Yogurt Parfait" loading="lazy">
-        
+        <img src="images/item-19.jpg" alt="Chicken Tenders" loading="lazy">
+
         <div class="macros">
-          <div class="macro"><div class="macro-val">200</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">15g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">8g</div><div class="macro-lbl">CARBS</div></div>
+          <div class="macro"><div class="macro-val">340</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">28g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">16g</div><div class="macro-lbl">FAT</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Greek Yogurt Parfait" data-ar="بارفيه يوغرت يوناني">Greek Yogurt Parfait</div>
-        <div class="cdesc">Greek yogurt, honey, walnuts, fresh strawberries</div>
+        <div class="cname" data-en="Chicken Tenders" data-ar="تندرز دجاج">Chicken Tenders</div>
+        <div class="cdesc">4 golden crispy chicken tenders, honey mustard dipping sauce</div>
         <div class="cfoot">
           <div class="cprice">24<small> AED</small></div>
-          <div class="ccal">200 kcal</div>
+          <div class="ccal">340 kcal</div>
           <button class="add-btn" onclick="addItem(this)">ADD</button>
         </div>
       </div>
     </div>
-    <div class="card" data-name="Avocado Toast" data-price="26">
+    <div class="card" data-name="Mozzarella Sticks" data-price="26">
       <div class="cimg">
-        <img src="images/item-20.webp" alt="Avocado Toast" loading="lazy">
+        <img src="images/item-20.jpg" alt="Mozzarella Sticks" loading="lazy">
         <span class="cbadge new">✨ NEW</span>
         <div class="macros">
-          <div class="macro"><div class="macro-val">220</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">20g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">15g</div><div class="macro-lbl">CARBS</div></div>
+          <div class="macro"><div class="macro-val">360</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">18g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">20g</div><div class="macro-lbl">FAT</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Avocado Toast" data-ar="توست أفوكادو">Avocado Toast</div>
-        <div class="cdesc">Sourdough, smashed avocado, cherry tomato, feta</div>
+        <div class="cname" data-en="Mozzarella Sticks" data-ar="أصابع موزاريلا">Mozzarella Sticks</div>
+        <div class="cdesc">6 golden mozzarella sticks, marinara dipping sauce</div>
         <div class="cfoot">
           <div class="cprice">26<small> AED</small></div>
-          <div class="ccal">220 kcal</div>
+          <div class="ccal">360 kcal</div>
           <button class="add-btn" onclick="addItem(this)">ADD</button>
         </div>
       </div>
@@ -472,123 +471,63 @@
 <section class="sec" id="drinks">
   <div class="sec-head">
     <div class="sec-sub">🥤 DRINKS · مشروبات</div>
-    <div class="sec-title" data-en="Healthy Drinks" data-ar="مشروبات صحية">Healthy Drinks</div>
-    <div class="sec-desc">Cold pressed · No artificial sugar</div>
+    <div class="sec-title" data-en="Cold Drinks" data-ar="مشروبات باردة">Cold Drinks</div>
+    <div class="sec-desc">Ice cold · Freshly made</div>
   </div>
   <div class="grid">
-    <div class="card" data-name="Chocolate Peanut Shake" data-price="28">
+    <div class="card" data-name="Mojito" data-price="22">
       <div class="cimg">
-        <img src="images/item-21.webp" alt="Chocolate Peanut Shake" loading="lazy">
-        <span class="cbadge cal">30g PROTEIN</span>
+        <img src="images/item-21.jpg" alt="Mojito" loading="lazy">
+        <span class="cbadge veg">🌱 FRESH</span>
         <div class="macros">
-          <div class="macro"><div class="macro-val">280</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">30g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">18g</div><div class="macro-lbl">CARBS</div></div>
+          <div class="macro"><div class="macro-val">90</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">0g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">20g</div><div class="macro-lbl">SUGAR</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Chocolate Peanut Shake" data-ar="شيك شوكولاتة وفول سوداني">Chocolate Peanut Shake</div>
-        <div class="cdesc">Whey protein, banana, peanut butter, almond milk</div>
-        <div class="cfoot">
-          <div class="cprice">28<small> AED</small></div>
-          <div class="ccal">280 kcal</div>
-          <button class="add-btn" onclick="addItem(this)">ADD</button>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-name="Strawberry Protein Shake" data-price="26">
-      <div class="cimg">
-        <img src="images/item-22.webp" alt="Strawberry Protein Shake" loading="lazy">
-        <span class="cbadge pop">⭐ POPULAR</span>
-        <div class="macros">
-          <div class="macro"><div class="macro-val">240</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">28g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">22g</div><div class="macro-lbl">CARBS</div></div>
-        </div>
-      </div>
-      <div class="cbody">
-        <div class="cname" data-en="Strawberry Protein Shake" data-ar="شيك فراولة بروتين">Strawberry Protein Shake</div>
-        <div class="cdesc">Whey protein, fresh strawberries, oat milk, honey</div>
-        <div class="cfoot">
-          <div class="cprice">26<small> AED</small></div>
-          <div class="ccal">240 kcal</div>
-          <button class="add-btn" onclick="addItem(this)">ADD</button>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-name="Green Detox Juice" data-price="22">
-      <div class="cimg">
-        <img src="images/item-23.webp" alt="Green Detox Juice" loading="lazy">
-        <span class="cbadge veg">🌱 RAW</span>
-        <div class="macros">
-          <div class="macro"><div class="macro-val">95</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">2g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">22g</div><div class="macro-lbl">CARBS</div></div>
-        </div>
-      </div>
-      <div class="cbody">
-        <div class="cname" data-en="Green Detox Juice" data-ar="عصير ديتوكس أخضر">Green Detox Juice</div>
-        <div class="cdesc">Kale, cucumber, green apple, ginger, lemon</div>
+        <div class="cname" data-en="Mojito" data-ar="موهيتو">Mojito</div>
+        <div class="cdesc">Fresh mint, lime juice, soda water, crushed ice</div>
         <div class="cfoot">
           <div class="cprice">22<small> AED</small></div>
-          <div class="ccal">95 kcal</div>
+          <div class="ccal">90 kcal</div>
           <button class="add-btn" onclick="addItem(this)">ADD</button>
         </div>
       </div>
     </div>
-    <div class="card" data-name="Immunity Booster" data-price="22">
+    <div class="card" data-name="Classic Cola" data-price="18">
       <div class="cimg">
-        <img src="images/item-24.webp" alt="Immunity Booster" loading="lazy">
-        
+        <img src="images/item-25.jpg" alt="Classic Cola" loading="lazy">
+
         <div class="macros">
-          <div class="macro"><div class="macro-val">110</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">1g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">26g</div><div class="macro-lbl">CARBS</div></div>
+          <div class="macro"><div class="macro-val">140</div><div class="macro-lbl">KCAL</div></div>
+          <div class="macro"><div class="macro-val">0g</div><div class="macro-lbl">PROTEIN</div></div>
+          <div class="macro"><div class="macro-val">38g</div><div class="macro-lbl">SUGAR</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Immunity Booster" data-ar="معزز المناعة">Immunity Booster</div>
-        <div class="cdesc">Orange, carrot, turmeric, ginger, black pepper</div>
-        <div class="cfoot">
-          <div class="cprice">22<small> AED</small></div>
-          <div class="ccal">110 kcal</div>
-          <button class="add-btn" onclick="addItem(this)">ADD</button>
-        </div>
-      </div>
-    </div>
-    <div class="card" data-name="Mint Lemonade" data-price="18">
-      <div class="cimg">
-        <img src="images/item-25.webp" alt="Mint Lemonade" loading="lazy">
-        
-        <div class="macros">
-          <div class="macro"><div class="macro-val">80</div><div class="macro-lbl">KCAL</div></div>
-          <div class="macro"><div class="macro-val">1g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">18g</div><div class="macro-lbl">CARBS</div></div>
-        </div>
-      </div>
-      <div class="cbody">
-        <div class="cname" data-en="Mint Lemonade" data-ar="ليموناضة بالنعناع">Mint Lemonade</div>
-        <div class="cdesc">Fresh lemon, mint, cold water, stevia</div>
+        <div class="cname" data-en="Classic Cola" data-ar="كولا كلاسيك">Classic Cola</div>
+        <div class="cdesc">Chilled Pepsi / 7UP, ice, lemon slice — your choice</div>
         <div class="cfoot">
           <div class="cprice">18<small> AED</small></div>
-          <div class="ccal">80 kcal</div>
+          <div class="ccal">140 kcal</div>
           <button class="add-btn" onclick="addItem(this)">ADD</button>
         </div>
       </div>
     </div>
-    <div class="card" data-name="Alkaline Water" data-price="8">
+    <div class="card" data-name="Mineral Water" data-price="8">
       <div class="cimg">
-        <img src="images/item-26.webp" alt="Alkaline Water" loading="lazy">
-        
+        <img src="images/item-26.jpg" alt="Mineral Water" loading="lazy">
+
         <div class="macros">
           <div class="macro"><div class="macro-val">0</div><div class="macro-lbl">KCAL</div></div>
           <div class="macro"><div class="macro-val">0g</div><div class="macro-lbl">PROTEIN</div></div>
-          <div class="macro"><div class="macro-val">0g</div><div class="macro-lbl">CARBS</div></div>
+          <div class="macro"><div class="macro-val">0g</div><div class="macro-lbl">SUGAR</div></div>
         </div>
       </div>
       <div class="cbody">
-        <div class="cname" data-en="Alkaline Water" data-ar="ماء قلوي">Alkaline Water</div>
-        <div class="cdesc">pH 8.5 alkaline water, 500ml</div>
+        <div class="cname" data-en="Mineral Water" data-ar="ماء معدني">Mineral Water</div>
+        <div class="cdesc">Still mineral water, 500ml</div>
         <div class="cfoot">
           <div class="cprice">8<small> AED</small></div>
           <div class="ccal">0 kcal</div>
@@ -600,8 +539,8 @@
 
 <div class="footer">
   <button class="wa-cta" onclick="openCart()">🛒 <span data-en="Order Now" data-ar="اطلب الآن">Order Now</span></button>
-  <div class="footer-info" data-en="📍 Dubai, UAE · 🚗 Delivery Available · 📸 @fitbites" data-ar="📍 دبي، الإمارات · 🚗 توصيل متاح · 📸 @fitbites">📍 Dubai, UAE · 🚗 Delivery Available · 📸 @fitbites</div>
-  <div class="footer-pf">Digital menu by <a href="https://proofflux.com" target="_blank">ProofFlux AI</a></div>
+  <div class="footer-info" data-en="📍 Dubai, UAE · 🚗 Delivery Available · 📸 @burgerzone" data-ar="📍 دبي، الإمارات · 🚗 توصيل متاح · 📸 @burgerzone">📍 Dubai, UAE · 🚗 Delivery Available · 📸 @burgerzone</div>
+  <div class="footer-pf">Menuflow by <a href="https://proofflux.com" target="_blank">Proofflux</a></div>
 </div>
 
 <!-- CART FAB -->
@@ -690,50 +629,6 @@
   <button class="success-close" onclick="closeSuccess()" id="sClose">Done ✓</button>
 </div>
 
-<!-- ADMIN MODE BAR -->
-<div class="admin-mode-bar" id="adminModeBar">
-  ⚙️ Admin Mode Active
-  <button class="ambar-btn" onclick="openAdminPanel()">Open Panel</button>
-  <button class="ambar-btn" onclick="apExitAdmin()">Exit Admin</button>
-</div>
-
-<!-- ADMIN LOGIN MODAL -->
-<div class="admin-login-bg" id="adminLoginBg" onclick="if(event.target===this)closeAdminLogin()">
-  <div class="admin-login-box">
-    <div class="alb-icon">🔐</div>
-    <div class="alb-title">Admin Access</div>
-    <div class="alb-sub">Enter your admin password</div>
-    <input class="alb-input" id="adminPwInput" type="password" maxlength="20" placeholder="••••••" onkeydown="if(event.key==='Enter')checkAdminPw()">
-    <div class="alb-error" id="adminPwError"></div>
-    <button class="alb-submit" onclick="checkAdminPw()">Enter</button><br>
-    <button class="alb-cancel" onclick="closeAdminLogin()">Cancel</button>
-  </div>
-</div>
-
-<!-- ADMIN PANEL -->
-<div class="ap" id="adminPanel">
-  <div class="ap-head">
-    <div class="ap-head-title">⚙️ Admin Panel</div>
-    <button class="ap-head-close" onclick="closeAdminPanel()">✕</button>
-  </div>
-  <div class="ap-tabs">
-    <button class="ap-tab on" data-tab="items" onclick="apSwitchTab('items')">📦 Items</button>
-    <button class="ap-tab" data-tab="categories" onclick="apSwitchTab('categories')">📂 Categories</button>
-    <button class="ap-tab" data-tab="contact" onclick="apSwitchTab('contact')">📱 Contact</button>
-    <button class="ap-tab" data-tab="branding" onclick="apSwitchTab('branding')">🎨 Branding</button>
-    <button class="ap-tab" data-tab="text" onclick="apSwitchTab('text')">✏️ Text</button>
-  </div>
-  <div class="ap-body">
-    <div class="ap-sec on" id="ap-items"></div>
-    <div class="ap-sec" id="ap-categories"></div>
-    <div class="ap-sec" id="ap-contact"></div>
-    <div class="ap-sec" id="ap-branding"></div>
-    <div class="ap-sec" id="ap-text"></div>
-  </div>
-</div>
-
-<!-- ADMIN EDIT / ADD ITEM MODAL -->
-<div class="ap-modal" id="apEditModal" onclick="if(event.target===this)closeApModal()"></div>
 
 <script src="js/script.js"></script>
 </body>
